@@ -1,0 +1,580 @@
+/* HERO BACKGROUND */
+#hero {
+    position: relative;
+    background: url('../public/background\ image.jpg')
+      no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.7); /* dark overlay */
+    z-index: 0;
+  }
+  
+  /* CONTENT */
+  .hero-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hercode-title {
+    font-size: 4rem;
+    color: #f06292;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+  }
+  
+  .hercode-title:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .slogan {
+    color: #eee;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .quote {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+ 
+  /* NAVBAR */
+  /* Navbar Glass Style */
+.glass-navbar {
+  background: rgba(0, 0, 0, 0.3);
+  /* backdrop-filter: blur(12px); */
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Brand Logo Styling */
+.hercode-logo {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.hercode-logo:hover {
+  color: #ff4081;
+}
+/* logo */
+
+.navbar-brand.hercode-logo {
+  color: #ffe0f0 !important; /* Add !important to ensure it's applied */
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-brand.hercode-logo:hover {
+  color: #ff4081 !important;
+  text-decoration: underline;
+}
+
+/* Focus effect */
+.navbar-brand.hercode-logo:focus {
+  outline: none;
+  color: #ff4081  !important;
+}
+
+
+.hercode-logo:hover {
+  color: #ff4081 ;
+  text-decoration: underline; 
+}
+
+.hercode-logo:focus {
+  outline: none; 
+  color: #ff4081 
+}
+
+/* Navbar Links */
+.custom-nav-link {
+  position: relative;
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ff4081;
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-nav-link:hover {
+  color: #ff4081 !important;
+}
+
+  
+  /* SLOGAN */
+.slogan {
+    color: #ffe0f0;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+  }
+  
+  /* QUOTE */
+  .quote {
+    color: #ffe0f0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* BUTTON */
+  .btn-hero {
+    background-color: transparent;
+    border: 2px solid #ff4081;
+    color: #ff4081;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ff408180;
+  }
+  
+  .btn-hero:hover {
+    background-color: #ff4081;
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ff4081cc;
+  }
+  /* ----------------------------------------------------------------------------------------- */
+  /* ABOUT SECTION */
+.about-section {
+    background-color: #fff0f5;
+    padding: 80px 0;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .about-text {
+    flex: 1 1 45%;
+    padding: 20px;
+  }
+  
+  .about-image {
+    flex: 1 1 47%;
+    padding: 20px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+    color: #f06292;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-highlight {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .btn-about {
+    background-color: #f06292;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-about:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+  }
+  /* -------------------------------------------------------------------------------------------------------- */
+  .services-section {
+    background: #fef3f7;
+    color: #222;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(183, 0, 134, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #b70086;
+  }
+  
+  /* -------------------------------------------------------------------------------------------------------------- */
+  /* INSPIRING WOMEN SECTION */
+.inspiring-women-section {
+    padding: 60px 0;
+    background-color: #fce4ec;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+    color: #d81b60;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .inspiring-woman-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .inspiring-woman-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .card-body {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .quote {
+    font-size: 1rem;
+    color: #d81b60;
+    font-weight: 500;
+  }
+  /* --------------------------------------------------------------------------------------------------------------- */
+  .contact-section {
+    background: #fefefe;
+    color: #222;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #b70086;
+    box-shadow: 0 0 0 2px rgba(183, 0, 134, 0.2);
+  }
+  
+  .btn-hero {
+    background: #b70086;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-hero:hover {
+    background: #8c0067;
+    color: #fff;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------------ */
+  .footer {
+    background: #111;
+    color: #eee;
+  }
+  
+  .footer-logo {
+    color: #f25287;
+    font-size: 1.8rem;
+  }
+  
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #f25287;
+  }
+  
+  .btn-pink {
+    background-color: #f25287;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-pink:hover {
+    background-color: #d74375;
+  }
+  
+  .footer-socials svg {
+    color: #f25287;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .footer-socials svg:hover {
+    opacity: 0.8;
+  }
+   
+  /*--------------------------------------------------------------------------------------------------------------------------------  */
+  .success-section {
+    background-color: #fff4fa;
+  }
+  
+  .success-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .success-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 10%, rgba(0,0,0,0.7) 100%);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 12px;
+  }
+  
+  .success-card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  .card-overlay h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .card-overlay p {
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  /*-------------------------------------------------------------------------------------------------------------------------------------  */
+  /* Events */
+  .events-section {
+    background-color: #f9f9f9;
+  }
+  
+  .event-card {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .event-card-img {
+    width: 50%;
+  }
+  
+  .event-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .event-card-info {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .event-card-title h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .event-date {
+    font-size: 1rem;
+    color: #757575;
+  }
+  
+  .event-location {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .event-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .btn-event {
+    margin-top: 20px;
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-event:hover {
+    background-color: #d81b60;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------- */
+  /* Testimonials */
+  .testimonial-section {
+    background: #f25287;
+    color: white;
+    padding: 60px 0;
+  }
+  
+  .testimonial-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------------ */
+  /* Blogs */
+  .blogs-section {
+    background: #f9f9f9;
+  }
+  
+  .blogs-section .card {
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  .blogs-section .card:hover {
+    transform: translateY(-5px);
+  }
+  

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import InspiringWomen from "./components/InspiringWomen";
+import Blog from "./components/Blog";
+import SuccessStories from "./components/SuccessStories";
+import Events from "./components/Events";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <About />
+      <Services/>
+      < InspiringWomen/>
+      <Blog/>
+      <SuccessStories/>
+      <Events/>
+      <Testimonials/>
+      <Contact/>
+      <Footer/>
+      
     </div>
   );
 }
