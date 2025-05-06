@@ -3,6 +3,9 @@
 HerCode is a powerful community-driven platform built using **React.js** and **Bootstrap**, designed to **inspire, educate, and support women** in the field of technology. Whether you're a beginner or a professional, HerCode welcomes you to learn, connect, and grow together.
 
 ---
+## Live Project
+
+You can view the live version of the project [here](https://her-code-manyas-projects-0de017c3.vercel.app/).
 
 ## ✨ Features
 
