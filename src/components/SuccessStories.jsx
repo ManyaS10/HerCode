@@ -9,7 +9,7 @@ const stories = [
   },
   {
     name: "Aparna Chennapragada",
-    image: "/aparna.jpg",
+    image: "/Aparna.jpg",
     quote: "Ex-Google VP • Chief Product Officer at Robinhood",
   },
   {
